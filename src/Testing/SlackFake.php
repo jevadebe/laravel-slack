@@ -62,7 +62,7 @@ class SlackFake extends Slack
         }, $count, true);
     }
 
-    protected function notify(SlackMessage $slackMessage)
+    public function notify(SlackMessage $slackMessage)
     {
         $this->sent[] = $slackMessage;
     }
